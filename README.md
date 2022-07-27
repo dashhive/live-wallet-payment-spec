@@ -38,7 +38,9 @@ If the user has entered a live wallet URL in the settings, POST the payment prot
 
 There needs to be two inputs in DashDirect settings:
 - Live Wallet URL
-- Live Wallet Auth (random string)
+- Live Wallet Auth (random base64 or base62 string)
+
+It's fine to auto-generate the auth string, as long as the user has a way to unhide it and see it in full.
 
 ### 2. Payment Request
 
