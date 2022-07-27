@@ -25,6 +25,7 @@ Authorization: Bearer <<auth-string>>
 
 - DashDirect relies on unreliable, ever-changing mobile wallets
 - Mobile wallets don't support current features (CoinJoin, BIP70, etc)
+- Phones have bad network connectivity in general
 
 ## Solution
 
