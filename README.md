@@ -24,6 +24,10 @@ Authorization: Bearer <<shared-secret-instead-of-kid-and-sig>>
 
 This uses JOSE and standard cryptographic algorithms because they are widely available across development environments, devices, etc.
 
+## Video Overview
+
+<https://www.youtube.com/watch?v=woZ6IzpJumk>
+
 ## Problems
 
 - Mobile phones have incredibly **unreliable network** connections, even with "full bars"
