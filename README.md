@@ -8,11 +8,11 @@ Content-Type: application/jose+json
 Authorization: Bearer <<shared-secret-instead-of-kid-and-sig>>
 
 {
-  "protected": base64encode({
+  "protected": base64UrlEncode({
     "alg": "ES256",
     "kid": "<<key-thumbprint>>",
   }),
-  "payload": base64encode({
+  "payload": base64UrlEncode({
     "iat": <<seconds-since-epoch>>,
     "exp": <<seconds-since-epoch-plus-60-seconds>>,
     "jti": <<random-base62-nonce>>,
@@ -52,7 +52,7 @@ A proof of concept could be accomplished using a shared secret via `Authorizatio
    Authorization: Bearer <<shared-secret-instead-of-jwk-and-sig>>
 
    {
-     "protected": base64encode({
+     "protected": base64UrlEncode({
        "alg": "ES256",
        "kid": "<<jwk-thumbprint>>",
        "jwk": {
@@ -62,7 +62,7 @@ A proof of concept could be accomplished using a shared secret via `Authorizatio
          "y": "kcLHXbGV9Bu2HONXGjxjbBpq0TsASlCgixnE8O-D8EM"
        }
      }),
-     "payload": base64encode({
+     "payload": base64UrlEncode({
        "iat": <<seconds-since-epoch>>,
        "exp": <<seconds-since-epoch-plus-15-minutes>>,
        "jti": <<random-base62-nonce>>,
@@ -90,11 +90,11 @@ Content-Type: application/jose+json
 Authorization: Bearer <<shared-secret-instead-of-kid-and-sig>>
 
 {
-  "protected": base64encode({
+  "protected": base64UrlEncode({
     "alg": "ES256",
     "kid": "<<key-thumbprint>>",
   }),
-  "payload": base64encode({
+  "payload": base64UrlEncode({
     "iat": <<seconds-since-epoch>>,
     "exp": <<seconds-since-epoch-plus-60-seconds>>,
     "jti": <<random-base62-nonce>>
@@ -118,11 +118,11 @@ Content-Type: application/jose+json
 Authorization: Bearer <<shared-secret-instead-of-kid-and-sig>>
 
 {
-  "protected": base64encode({
+  "protected": base64UrlEncode({
     "alg": "ES256",
     "kid": "<<jwk-thumbprint>>"
   }),
-  "payload": base64encode({
+  "payload": base64UrlEncode({
     "iat": <<seconds-since-epoch>>,
     "exp": <<seconds-since-epoch-plus-60-seconds>>,
     "jti": <<random-base62-nonce>>,
@@ -143,16 +143,16 @@ Content-Type: application/jose+json
 Authorization: Bearer <<shared-secret-instead-of-jwk-and-sig>>
 
 {
-  "protected": base64encode({
+  "protected": base64UrlEncode({
     "alg": "none"
   }),
-  "payload": base64encode({
-    "iat": <<seconds-since-epoch>>,
-    "exp": <<seconds-since-epoch-plus-15-minutes>>,
-    "jti": <<random-base62-nonce>>,
+  "payload": base64UrlEncode({
+    "iat": 1658903036,
+    "exp": 1658903963,
+    "jti": "HheL9rZ5t5NkhENOtks7mw",
     "suggested_name": "Dash Wallet",
-    "code": "123-456",
-    "shared_secret": <<shared-secret-instead-of-jwk-and-sig>>,
+    "code": "V2C-44W",
+    "shared_secret": "xGsczJTgJyyjvtLKkhOfMw"
   }),
   "signature": null
 }
