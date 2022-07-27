@@ -26,8 +26,8 @@ This uses JOSE and standard cryptographic algorithms because they are widely ava
 
 ## Problems
 
-- Mobile phones have incredibly unreliable network connections
-- Most applications are slow to adopt new technology - such as CoinJoin
+- Mobile phones have incredibly **unreliable network** connections, even with "full bars"
+- Most applications are slow to adopt new protocols and capabilites - such as **CoinJoin**
 
 ## Solution
 
