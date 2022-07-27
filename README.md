@@ -135,7 +135,7 @@ Authorization: Bearer <<shared-secret-instead-of-kid-and-sig>>
 Payment protocol requests will be responded to automatically, or according to the live wallet rules. \
 For example: the user may need to tap "Approve" on a notification for requests over Đ1.0, or if more than Đ10.0 is requested over a rolling window of 7 days, etc.
 
-### 0. Proof of Concept Request Example
+### Appendix: Proof of Concept Request Example
 
 ```txt
 POST https://live-wallet.example.com/me/
